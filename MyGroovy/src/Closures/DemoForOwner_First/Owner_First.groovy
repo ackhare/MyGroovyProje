@@ -1,8 +1,8 @@
-package Closures.DemoForOwnerFirstStartegy
+package Closures.DemoForOwner_First
 
-
-
-
+/**
+ * Created by chetan on 12/10/15.
+ */
 
 class Person {
   String name
@@ -26,6 +26,9 @@ there is no change in the result: name is first resolved on the owner of the clo
 println p.toString() == 'My name is Sarah'
 p.pretty.delegate = t
 println p.toString() == 'My name is Sarah'
+
+
+
 //However, it is possible to change the resolution strategy of the closure:
 p.pretty.resolveStrategy = Closure.DELEGATE_FIRST
 println p.toString() == 'My name is Teapot'
