@@ -1,4 +1,5 @@
 package ConcurrencyWithoutGpars
+//See more at: http://www.tothenew.com/blog/how-to-use-thread-pooling-using-groovy/#sthash.K3R3XLja.dpuf
 
 /**
  * Created by chetan on 20/11/16.
@@ -9,7 +10,6 @@ import java.util.concurrent.Callable
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.Future
-//See more at: http://www.tothenew.com/blog/how-to-use-thread-pooling-using-groovy/#sthash.K3R3XLja.dpuf
 def myClosure = {num -> println "I Love Groovy ${num}"}
 def threadPool = Executors.newFixedThreadPool(4)
  try {
