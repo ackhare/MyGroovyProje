@@ -9,6 +9,11 @@ import javassist.bytecode.analysis.FramePrinter
  * Created by chetan on 22/11/16.
  */
 
+/*
+framedump is a tool for viewing a merged combination of the instructions
+and frame state of all methods in a class
+ */
+
 ClassPool pool=ClassPool.getDefault();
 InputStream ins = new FileInputStream('/home/chetan/IdeaProjects/MyGroovy/out/production/MyGroovy/JavaAssist/frameDump.class')
 CtClass cc = pool.makeClass(ins);

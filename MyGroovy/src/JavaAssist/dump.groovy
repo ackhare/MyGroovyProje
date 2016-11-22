@@ -15,7 +15,11 @@ import javassist.tools.Dump
  * Created by chetan on 22/11/16.
  */
 
-
+/*
+//Dump is a tool for viewing the class definition in the given class file. Unlike the JDK javap tool,
+// Dump works even if the class file is broken.
+//prints the contents of the constant pool and the list of methods and fields
+ */
 
             DataInputStream intre = new DataInputStream(new FileInputStream("/home/chetan/IdeaProjects/MyGroovy/out/production/MyGroovy/JavaAssist/dump.class"));
             ClassFile w = new ClassFile(intre);
