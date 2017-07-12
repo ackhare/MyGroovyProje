@@ -14,6 +14,7 @@ interceptor to the ProxyMetaClass.
 With the use() method we can run our methods and the interceptor is used for each
 method invocation.
  */
+@Log
 class HelloInterceptor implements Interceptor {
     boolean invokeMethod = true
 
@@ -27,7 +28,7 @@ class HelloInterceptor implements Interceptor {
             invokeMethod = false
         }
     }
-
+    @Log
     Object afterInvoke(Object obj, String name, Object[] args, Object result) {
         if (name == 'shout') {
             invokeMethod = true
